@@ -7,14 +7,6 @@ Library    String
 Library    RequestsLibrary
 Resource   variables.resource
 
-*** Keywords ***
-Test setup
-    Open Browser    ${BOL_URL}    ${BROWSER}
-    Maximize Browser Window
-
-Test teardown
-    Close All Browsers
-
 *** Test Cases ***
 Open Browser And Search
     Open Browser    ${BOL_URL}    ${BROWSER}
