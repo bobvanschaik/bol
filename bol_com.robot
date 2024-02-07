@@ -1,6 +1,8 @@
 *** Settings ***
-Library           SeleniumLibrary
-Library           Browser
+Library    SeleniumLibrary
+Library    Browser
+Resource    locators.resource
+Resource    variables.resource
 
 *** Variables ***
 ${BOL_URL}   https://www.bol.com
