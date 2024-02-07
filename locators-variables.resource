@@ -1,3 +1,3 @@
 *** Variables ***
 ${BROWSER}    chrome
-${URL}        https://bol.com/
+${URL}        https://www.bol.com
