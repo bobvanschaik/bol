@@ -1,6 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    Browser
+Library    BuiltIn
+Library    Collections
 Resource   variables.resource
 
 *** Test Cases ***
