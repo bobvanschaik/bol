@@ -6,6 +6,8 @@ Library    Collections
 Library    String
 Library    RequestsLibrary
 Resource   variables.resource
+Test Setup  Open Browser
+Test Teardown   Exit Browser
 
 *** Test Cases ***
 Open Browser And Search
