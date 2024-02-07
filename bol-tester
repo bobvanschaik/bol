@@ -62,5 +62,6 @@ Check Footer Links Href Attribute
         ${href}=    Get Element Attribute    ${link}    href
         Should Not Be Empty    ${href}
     END
-// optional is to test with Page Should Contain Element
     Close All Browsers
+
+# This is a code comment. Optional is to test with Page Should Contain Element
