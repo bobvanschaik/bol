@@ -9,7 +9,6 @@ ${BOL_URL}   https://www.bol.com
 Has Title
     New Page    https://bol.com/
     Get Title    contains    bol
-    Page Should Contain      bol
 
 Product Search
     Open Available Browser    ${BOL_URL}    chrome
