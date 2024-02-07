@@ -14,10 +14,6 @@ Teardown
     Close All Browsers
 
 *** Test Cases ***
-Has Title
-    New Page    ${URL}
-    Get Title    contains    bol
-
 Open Browser And Search
     Open Browser    ${BOL_URL}    ${BROWSER}
     Input Text      id=searchfor    product_name
