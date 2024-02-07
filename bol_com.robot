@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    Browser
-Resource    variables.resource
+Resource   variables.resource
 
 *** Test Cases ***
 Has Title
