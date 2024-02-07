@@ -5,7 +5,7 @@ Resource    variables.resource
 
 *** Test Cases ***
 Has Title
-    New Page    https://bol.com/
+    New Page    ${URL}
     Get Title    contains    bol
 
 Product Search
