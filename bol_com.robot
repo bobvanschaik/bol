@@ -9,7 +9,7 @@ Has Title
     Get Title    contains    bol
 
 Product Search
-    Open Available Browser    ${BOL_URL}    chrome
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Input Text      id=searchfor    product_name
     Click Button    css=.search-indicator
@@ -17,13 +17,13 @@ Product Search
     Close All Browsers
 
 Navigate To Basket
-    Open Available Browser    ${BOL_URL}    chrome
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.basket
     Close All Browsers
 
 Add Product To Basket
-    Open Available Browser    ${BOL_URL}    chrome
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Input Text      id=searchfor    product_name
     Click Button    css=.search-indicator
@@ -31,7 +31,7 @@ Add Product To Basket
     Close All Browsers
 
 Login With Wrong Credentials
-    Open Available Browser    ${BOL_URL}    chrome
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Input Text      id=username    wrong_name
     Input Text      id=password    wrong_pass
@@ -40,19 +40,19 @@ Login With Wrong Credentials
     Close All Browsers
 
 Navigate To Baby Room Furniture
-    Open Available Browser    ${BOL_URL}    chrome
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.dropdown-menu-item    Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
     Close All Browsers
 
 Filter Dutch-Language E-books
-    Open Available Browser    ${BOL_URL}/books    chrome
+    Open Available Browser    ${BOL_URL}/books    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.filter-link    Dutch-Language
     Close All Browsers
 
 Check Footer Links Href Attribute
-    Open Available Browser    ${BOL_COM_URL}    chrome
+    Open Available Browser    ${BOL_COM_URL}    ${BROWSER}
     Maximize Browser Window
     ${links}=    Get Web Elements    css=.footer-links a
     FOR    ${link}    IN    @{links}
