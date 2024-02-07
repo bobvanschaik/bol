@@ -2,6 +2,7 @@
 
 ${BROWSER}    chrome
 ${URL}        https://www.bol.com
+${DELAY}      0
 # Test data
 ${FIRST_NAME}    Jan
 ${LAST_NAME}    Maas    
