@@ -10,8 +10,8 @@ Has Title
     New Page    ${URL}
     Get Title    contains    bol
 
-Product Search
-    Open Available Browser    ${BOL_URL}    ${BROWSER}
+Open Browser And Search
+    Open Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
     Input Text      id=searchfor    product_name
     Click Button    css=.search-indicator
