@@ -3,6 +3,8 @@ Library    SeleniumLibrary
 Library    Browser
 Library    BuiltIn
 Library    Collections
+Library    String
+Library    RequestsLibrary
 Resource   variables.resource
 
 *** Keywords ***
