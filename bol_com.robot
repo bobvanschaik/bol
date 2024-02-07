@@ -9,7 +9,7 @@ Resource   variables.resource
 
 *** Test Cases ***
 Open Browser And Search
-    Open Browser
+    Open Available Browser    ${BOL_URL}    ${BROWSER}
     Input Text      id=searchfor    product_name
     Click Button    css=.search-indicator
     Capture Page Screenshot
