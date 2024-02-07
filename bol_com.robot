@@ -8,11 +8,11 @@ Library    RequestsLibrary
 Resource   variables.resource
 
 *** Keywords ***
-Setup
+Test setup
     Open Browser    ${BOL_URL}    ${BROWSER}
     Maximize Browser Window
 
-Teardown
+Test teardown
     Close All Browsers
 
 *** Test Cases ***
