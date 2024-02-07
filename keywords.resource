@@ -8,4 +8,4 @@ Test setup
     Maximize Browser Window
 
 Test teardown
-    Close All Browsers
+    Exit Browser
