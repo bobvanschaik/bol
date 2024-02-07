@@ -1,4 +1,8 @@
 *** Keywords ***
-Test Setup
 
-Test Teardown
+Test setup
+    Open Browser    ${BOL_URL}    ${BROWSER}
+    Maximize Browser Window
+
+Test teardown
+    Close All Browsers
