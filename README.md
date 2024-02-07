@@ -1,2 +1,2 @@
 # bol
-bol.com test automation
+Test automation suite example built in Python Robot Framework
