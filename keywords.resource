@@ -1,11 +1,15 @@
 *** Keywords ***
 
 Open Browser
-    Open Browser    ${BOL_URL}    ${BROWSER}
-
-Test setup
-    Open Browser    ${BOL_URL}    ${BROWSER}
+    Open Browser   ${url}      ${browser}
     Maximize Browser Window
 
-Test teardown
-    Exit Browser
+Exit Browser
+    Close Browser
+    
+Search product
+    Input Text      ${searchboxInputField}  shirt
+    Press Keys      ${searchboxInputField}	RETURN
+
+Log out
+    Click Link  ${logoutButton}  
