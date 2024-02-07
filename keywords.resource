@@ -6,6 +6,3 @@ Open Browser
 
 Exit Browser
     Close Browser
-
-Log out
-    Click Link  ${logoutButton}  
