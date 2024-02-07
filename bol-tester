@@ -6,7 +6,6 @@ Library           Browser
 ${BOL_URL}   https://www.bol.com
 
 *** Test Cases ***
-
 Has Title
     New Page    https://bol.com/
     Get Title    contains    bol
