@@ -12,8 +12,8 @@ Starting a browser with a page
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
-    Click With Options          id="js-first-screen-accept-all-button"    left
-    Get Title        contains id="De winkel van ons allemaal | bol.com"
+    Click With Options          id=js-first-screen-accept-all-button    left
+    Get Title        contains id=De winkel van ons allemaal | bol.com
 
 Navigate To Basket
     New Browser    chromium    headless=false
