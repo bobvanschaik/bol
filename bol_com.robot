@@ -5,8 +5,6 @@ Library    Collections
 Library    String
 Library    RequestsLibrary
 Resource   variables.resource
-Test Setup  New Page
-Test Teardown   Exit Browser
 
 *** Test Cases ***
 Starting a browser with a page
