@@ -15,13 +15,6 @@ Starting a browser with a page
     New Page       ${URL}
     Get Title      ==    Browser
 
-New Page And Search
-    New Page    ${URL}    ${BROWSER}
-    Fill Text      id=searchfor    product_name
-    Click Button    css=.search-indicator
-    Capture Page Screenshot
-    Close All Browsers
-
 Navigate To Basket
     New Page    ${URL}    ${BROWSER}
     Click Link      css=.basket
