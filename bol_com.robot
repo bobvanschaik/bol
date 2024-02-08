@@ -10,8 +10,8 @@ Resource   keywords.resource
 *** Test Cases ***
 Starting a browser with a page
     New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
+    New Context    viewport={'width': 1920, 'height': 1080}
     Wait For Response
     Get Url        contains id="js-first-screen-accept-all-button"
     Click          id="js-first-screen-accept-all-button"
