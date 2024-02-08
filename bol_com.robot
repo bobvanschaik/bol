@@ -21,6 +21,7 @@ Navigate To Basket
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
     Click      css=.basket
+    Close Browser    CURRENT        # Closes current browsers
 
 Add Product To Basket
     New Browser    chromium    headless=false
@@ -29,24 +30,29 @@ Add Product To Basket
     Fill Text      id=searchfor    baby
     Click            css=.search-indicator
     Click            css=.add-to-basket
+    Close Browser    CURRENT
 
 Invalid Login
-    New Page    ${URL}    ${BROWSER}
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page        ${URL}    ${BROWSER}
     Fill Text      id=username    wrong_name
     Fill Text      id=password    wrong_pass
-    Click Button    css=.login-button
-    Close Browser    CURRENT        # Closes all browsers
+    Click            css=.login-button
+    Close Browser    CURRENT
 
 Navigate To Baby Room Furniture
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
     New Page    ${URL}    ${BROWSER}
-    Click Link      css=.dropdown-menu-item    Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
-    Close All Browsers
+    Click      css=.dropdown-menu-item   # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
+    Close Browser    CURRENT        # Closes current browsers
 
 Filter Dutch-Language E-books
     New Page    ${URL}/books    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.filter-link    Dutch-Language
-    Close All Browsers
+    Close Browser    CURRENT
 
 Check Footer Links Href Attribute
     New Page    ${URL}    ${BROWSER}
