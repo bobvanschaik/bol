@@ -2,8 +2,7 @@
 
 ${BROWSER}    chrome
 ${URL}        https://www.bol.com
-${PageTitle}  De winkel van ons allemaal | bol.com
-${DELAY}      0
+
 # Test data
 ${FIRST_NAME}    Jan
 ${LAST_NAME}    Maas    
