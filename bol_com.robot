@@ -24,19 +24,19 @@ Navigate To Basket
     Click      css=.basket
 
 Add Product To Basket
-    New Page    ${URL}    ${BROWSER}
-    Fill Text      id=searchfor    product_name
-    Click Button    css=.search-indicator
-    Click Button    css=.add-to-basket
-    Close All Browsers
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${URL}
+    Fill Text      id=searchfor    baby
+    Click            css=.search-indicator
+    Click            css=.add-to-basket
 
 Invalid Login
     New Page    ${URL}    ${BROWSER}
     Fill Text      id=username    wrong_name
     Fill Text      id=password    wrong_pass
     Click Button    css=.login-button
-    Clear Browser Cookies
-    Close All Browsers
+    Close Browser    CURRENT        # Closes all browsers
 
 Navigate To Baby Room Furniture
     New Page    ${URL}    ${BROWSER}
