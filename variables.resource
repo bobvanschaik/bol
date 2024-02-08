@@ -1,6 +1,6 @@
 *** Variables ***
 
-${BROWSER}    chrome
+${BROWSER}    browser=chrome
 ${URL}        https://www.bol.com
 ${DELAY}      0
 # Test data
