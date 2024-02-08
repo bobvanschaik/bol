@@ -1,55 +1,54 @@
 *** Settings ***
-Library    SeleniumLibrary
 Library    Browser
 Library    BuiltIn
 Library    Collections
 Library    String
 Library    RequestsLibrary
 Resource   variables.resource
-Test Setup  Open Browser
+Test Setup  New Page
 Test Teardown   Exit Browser
 
 *** Test Cases ***
-Open Browser And Search
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=searchfor    product_name
+New Page And Search
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=searchfor    product_name
     Click Button    css=.search-indicator
     Capture Page Screenshot
     Close All Browsers
 
 Navigate To Basket
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Click Link      css=.basket
     Close All Browsers
 
 Add Product To Basket
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=searchfor    product_name
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=searchfor    product_name
     Click Button    css=.search-indicator
     Click Button    css=.add-to-basket
     Close All Browsers
 
 Invalid Login
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=username    wrong_name
-    Input Text      id=password    wrong_pass
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=username    wrong_name
+    Fill Text      id=password    wrong_pass
     Click Button    css=.login-button
     Clear Browser Cookies
     Close All Browsers
 
 Navigate To Baby Room Furniture
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Click Link      css=.dropdown-menu-item    Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
     Close All Browsers
 
 Filter Dutch-Language E-books
-    Open Browser    ${URL}/books    ${BROWSER}
+    New Page    ${URL}/books    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.filter-link    Dutch-Language
     Close All Browsers
 
 Check Footer Links Href Attribute
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Maximize Browser Window
     ${links}=    Get Web Elements    css=.footer-links a
     FOR    ${link}    IN    @{links}
