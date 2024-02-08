@@ -14,7 +14,7 @@ Starting a browser with a page
     New Page       url=https://www.bol.com
     Set Browser Timeout    10 seconds
     Click With Options          id="js-first-screen-accept-all-button"    left
-    Get Url        contains De winkel van ons allemaal | bol.com
+    Get Title        contains De winkel van ons allemaal | bol.com
 
 Navigate To Basket
     New Browser    chromium    headless=false
