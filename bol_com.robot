@@ -12,7 +12,7 @@ Starting a browser with a page
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
-    Click          id="js-first-screen-accept-all-button"    left
+    Click With Options          id="js-first-screen-accept-all-button"    left
     Get Url        contains ${PageTitle}
 
 Navigate To Basket
