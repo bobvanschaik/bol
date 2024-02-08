@@ -10,7 +10,7 @@ Resource   keywords.resource
 *** Test Cases ***
 Starting a browser with a page
     New Browser    chromium    headless=false
-    New Page       ${URL}
+    New Page       url    https://www.bol.com
     New Context    viewport={'width': 1920, 'height': 1080}
     Wait For Response
     Get Url        contains id="js-first-screen-accept-all-button"
@@ -20,14 +20,14 @@ Starting a browser with a page
 Navigate To Basket
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       ${URL}
+    New Page       url
     Click      css=.basket
     Close Browser    CURRENT
 
 Add Product To Basket
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       ${URL}
+    New Page       url
     Fill Text      id=searchfor    baby
     Click            css=.search-indicator
     Click            css=.add-to-basket
