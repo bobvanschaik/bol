@@ -17,8 +17,8 @@ Navigate To Basket
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     text=Doorgaan
-    Click        text=Doorgaan
+    Wait For Elements State     text="Doorgaan"
+    Click        text="Doorgaan"
     Click          css=.basket
     Close Browser    CURRENT
 
