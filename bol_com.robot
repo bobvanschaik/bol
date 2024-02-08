@@ -17,11 +17,8 @@ Navigate To Basket
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
-    Hover          Text=Doorgaan         # Move mouse over the element
-    Click          Text=Doorgaan    
+    Click              contains            Text=Doorgaan    
     Click          css=.basket
-    Close Browser    CURRENT
-    Click      css=.basket
     Close Browser    CURRENT
 
 Add Product To Basket
