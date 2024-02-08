@@ -35,13 +35,13 @@ Navigate To Baby Room Furniture
     Close All Browsers
 
 Filter Dutch-Language E-books
-    Open Browser    ${URL}/books    ${BROWSER}
+    New Page    ${URL}/books    ${BROWSER}
     Maximize Browser Window
     Click Link      css=.filter-link    Dutch-Language
     Close All Browsers
 
 Check Footer Links Href Attribute
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Maximize Browser Window
     ${links}=    Get Web Elements    css=.footer-links a
     FOR    ${link}    IN    @{links}
