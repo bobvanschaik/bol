@@ -1,36 +1,36 @@
 *** Keywords ***
 
-Open Browser
-    Open Browser   ${url}      ${browser}
+New Page
+    New Page   ${url}      ${browser}
     Maximize Browser Window
 
-Open Browser And Search
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=searchfor    product_name
+New Page And Search
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=searchfor    product_name
     Click Button    css=.search-indicator
 
 Navigate To Basket
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Click Link      css=.basket
     Close All Browsers
 
 Add Product To Basket
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=searchfor    product_name
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=searchfor    product_name
     Click Button    css=.search-indicator
     Click Button    css=.add-to-basket
     Close All Browsers
 
 Invalid Login
-    Open Browser    ${URL}    ${BROWSER}
-    Input Text      id=username    wrong_name
-    Input Text      id=password    wrong_pass
+    New Page    ${URL}    ${BROWSER}
+    Fill Text      id=username    wrong_name
+    Fill Text      id=password    wrong_pass
     Click Button    css=.login-button
     Clear Browser Cookies
     Close All Browsers
 
 Navigate To Baby Room Furniture
-    Open Browser    ${URL}    ${BROWSER}
+    New Page    ${URL}    ${BROWSER}
     Click Link      css=.dropdown-menu-item    Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
     Close All Browsers
 
