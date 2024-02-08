@@ -5,6 +5,7 @@ Library    Collections
 Library    String
 Library    RequestsLibrary
 Resource   variables.resource
+Resource   keywords.resource
 
 *** Test Cases ***
 Starting a browser with a page
