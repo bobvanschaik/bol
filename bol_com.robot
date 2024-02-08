@@ -13,13 +13,15 @@ Starting a browser with a page
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
+    Get Url        contains id="js-first-screen-accept-all-button"
     Click          id="js-first-screen-accept-all-button"
-    Get Title      ==    Browser
+    Get Url        contains ${PageTitle}
 
 Navigate To Basket
-    New Page    ${URL}    ${BROWSER}
-    Click Link      css=.basket
-    Close All Browsers
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${URL}
+    Click      css=.basket
 
 Add Product To Basket
     New Page    ${URL}    ${BROWSER}
