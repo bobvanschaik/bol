@@ -9,6 +9,12 @@ Test Setup  New Page
 Test Teardown   Exit Browser
 
 *** Test Cases ***
+Starting a browser with a page
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       ${URL}
+    Get Title      ==    Browser
+
 New Page And Search
     New Page    ${URL}    ${BROWSER}
     Fill Text      id=searchfor    product_name
