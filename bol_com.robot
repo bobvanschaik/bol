@@ -12,7 +12,7 @@ Starting a browser with a page
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
-    Wait For Elements State    //h1    focused    1s
+    Wait For Response
     Get Url        contains id="js-first-screen-accept-all-button"
     Click          id="js-first-screen-accept-all-button"
     Get Url        contains ${PageTitle}
@@ -22,7 +22,7 @@ Navigate To Basket
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
     Click      css=.basket
-    Close Browser    CURRENT        # Closes current browsers
+    Close Browser    CURRENT
 
 Add Product To Basket
     New Browser    chromium    headless=false
@@ -47,17 +47,19 @@ Navigate To Baby Room Furniture
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page    ${URL}    ${BROWSER}
     Click      css=.dropdown-menu-item   # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
-    Close Browser    CURRENT        # Closes current browsers
+    Close Browser    CURRENT
 
 Filter Dutch-Language E-books
-    New Page    ${URL}/books    ${BROWSER}
-    Maximize Browser Window
-    Click Link      css=.filter-link    Dutch-Language
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page        ${URL}    ${BROWSER}
+    Click          css=.filter-link    Dutch-Language
     Close Browser    CURRENT
 
 Check Footer Links Href Attribute
-    New Page    ${URL}    ${BROWSER}
-    Maximize Browser Window
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page        ${URL}    ${BROWSER}
     ${links}=    Get Web Elements    css=.footer-links a
     FOR    ${link}    IN    @{links}
         ${href}=    Get Element Attribute    ${link}    href
