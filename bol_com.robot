@@ -10,6 +10,7 @@ Starting a browser with a page
     New Page       url=https://www.bol.com
     Click With Options          id=js-first-screen-accept-all-button    left
     Get Title        contains               De winkel van ons allemaal
+    #    Sleep    4
     Close Browser    CURRENT
 
 Navigate To Basket
