@@ -13,6 +13,7 @@ Starting a browser with a page
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       ${URL}
+    Click          id="js-first-screen-accept-all-button"
     Get Title      ==    Browser
 
 Navigate To Basket
