@@ -1,7 +1,7 @@
 *** Variables ***
 
 ${BROWSER}    Chromium      headless=False
-${BASE-URL}   https://www.bol.com/
+${URL}   https://www.bol.com/
 
 # Test data
 ${FIRST_NAME}    Jan
