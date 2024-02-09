@@ -1,7 +1,10 @@
 # bol
-Test automation suite example built in Python Robot Framework. Keyword documentation: https://marketsquare.github.io/robotframework-browser/Browser.html
+Test automation suite example built in Python Robot Framework - specifically Browser Library syntax.
+Tip: follow the installation instructions at the Library Browser github pages, since that will install the latest version of the RobotFramework as a dependency: https://github.com/MarketSquare/robotframework-browser/
+Keyword documentation: https://marketsquare.github.io/robotframework-browser/Browser.html
 
-**Prerequisites**
+
+**Prerequisites and Install**
 
 Browser Library installation requires both Python and NodeJs.
 
@@ -36,12 +39,6 @@ Initialize the Browser library and skip browsers installation:
 
 ```
 rfbrowser init --skip-browsers
-```
-
-Tip: follow the installation instructions at the Library Browser github pages, since that will install the latest version of the RobotFramework as a dependency.
-
-```
-https://github.com/MarketSquare/robotframework-browser/
 ```
 
 Install browser binaries separately according Playwright instructions. Example:
