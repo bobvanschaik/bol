@@ -37,7 +37,6 @@ Add Product To Basket
     Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
     Press Keys     xpath=//button[@class=“wsp-search__btn” and contains(text(),‘Zoeken’)]     Enter
-    Wait For All Promises
     Wait For Elements State    id=9200000053342577
     Click   id=9200000053342577
     Take Screenshot
