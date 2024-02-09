@@ -33,7 +33,7 @@ Add Product To Basket
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-    Click      css=.basket
+    Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
     Wait For Elements State    id=9300000064661806
     Click   id=9300000064661806
