@@ -35,8 +35,11 @@ Add Product To Basket
     Click        css=.ui-btn
     Click      css=.basket
     Fill Text      id=searchfor    babyfoon
+    Wait For Elements State    id=9300000064661806
+    Click   id=9300000064661806
     Take Screenshot
-    Click   id=9300000064661806         
+    Get Page Source
+    Pause execution       
 # https://www.bol.com/nl/nl/p/philips-avent-connected-scd923-26-beeldbabyfoon-met-app/9300000064661806/?bltgh=iUPxjMjKDp6Zh7t9iWFI-w.2_18.20.ProductTitle
     # Click            css=.add-to-basket
     Close Browser    CURRENT
@@ -79,3 +82,6 @@ Check Footer Links Href Attribute
         Should Not Be Empty    ${href}
     END
 
+    # Take Screenshot
+    # Get Page Source
+    # Pause execution
