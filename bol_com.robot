@@ -6,9 +6,7 @@ Resource    variables.robot
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
 Starting a browser with a page
-    New Browser    browser=${browser}      headless=False    args=["--start-maximized"]
-    New Context    viewport=${None}
-    New Page       ${url}
+    Open Maximized Browser
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
