@@ -27,6 +27,7 @@ Navigate To Basket
     Close Browser    CURRENT
 
 Add Product To Basket
+[Documentation] This test case searches and adds a product to the basket.
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
@@ -35,14 +36,13 @@ Add Product To Basket
     Click        css=.ui-btn
     Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
-    Click    id=searchfor    left
-    Wait For Elements State    id=9300000064661806
-    Click   id=9300000064661806
+    Click        text="babyfoons"   left
+    Wait For All Promises
+    Wait For Elements State    id=9200000053342577
+    Click   id=9200000053342577
     Take Screenshot
     Get Page Source
-    Pause execution     
-# https://www.bol.com/nl/nl/p/philips-avent-connected-scd923-26-beeldbabyfoon-met-app/9300000064661806/?bltgh=iUPxjMjKDp6Zh7t9iWFI-w.2_18.20.ProductTitle
-    # Click            css=.add-to-basket
+    Pause execution
     Close Browser    CURRENT
 
 Invalid Login
