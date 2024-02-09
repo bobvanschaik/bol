@@ -5,7 +5,12 @@ Test automation suite example built in Python Robot Framework. Keyword documenta
 
 Browser Library installation requires both Python and NodeJs.
 
+Plain Robot Framework installation
 
+``` 
+pip install robotframework
+
+``` 
 
 Install Browser library from PyPi with pip:
 
@@ -50,11 +55,3 @@ Run test with PLAYWRIGHT_BROWSERS_PATH set. Example:
 ```
 PLAYWRIGHT_BROWSERS_PATH=$HOME/pw-browsers robot path/to/test
 ```
-
-```
-
-Plain Robot Framework installation
-
-``` 
-pip install robotframework
-``` 
