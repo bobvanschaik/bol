@@ -8,7 +8,6 @@ Resource    variables.robot
 Starting a browser with a page
     Open Maximized Browser
     Open Browser to bol
-    Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
 Navigate To Basket
