@@ -1,5 +1,7 @@
 *** Settings ***
 Library    Browser
+Resource    keywords.robot
+Resource    variables.robot
 
 *** Variables ***
 ${browser}        Chromium
