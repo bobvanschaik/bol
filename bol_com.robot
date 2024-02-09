@@ -4,7 +4,8 @@ Resource   variables.resource
 Resource   keywords.resource
 
 *** Test Cases ***
-[Documentation] asserts page Title
+[Documentation] This test case tests that the browser is loading a page and
+asserts the page Title.
 Starting a browser with a page
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
@@ -13,8 +14,8 @@ Starting a browser with a page
     Get Title        contains  De winkel van ons allemaal
     Close Browser    CURRENT
 
-# accepts all cookies then language and asserts page Title
 Navigate To Basket
+[Documentation] This test case accepts all cookies, then language check and navigates to the basket.
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
