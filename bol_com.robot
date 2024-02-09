@@ -49,6 +49,8 @@ Invalid Login
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
 
     Fill Text      id=username    wrong_name
     Fill Text      id=password    wrong_pass
@@ -60,6 +62,9 @@ Navigate To Baby Room Furniture
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
+
     Click      css=.dropdown-menu-item   # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
     Close Browser    CURRENT
 
@@ -67,6 +72,9 @@ Filter Dutch-Language E-books
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
+
     Click          id=js-first-screen-accept-all-button    left
     Click          css=.filter-link    Dutch-Language
     Close Browser    CURRENT
@@ -76,6 +84,8 @@ Check Footer Links Href Attribute
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
     ${links}=    Get Web Elements    css=.footer-links a
     FOR    ${link}    IN    @{links}
         ${href}=    Get Element Attribute    ${link}    href
