@@ -9,7 +9,7 @@ Starting a browser with a page
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
-    Get Title        contains               De winkel van ons allemaal
+    Get Title        contains  De winkel van ons allemaal
     Close Browser    CURRENT
 
 Navigate To Basket
@@ -27,6 +27,8 @@ Add Product To Basket
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
     Click      css=.basket
     Fill Text      id=searchfor    baby
     Click            css=.search-indicator
