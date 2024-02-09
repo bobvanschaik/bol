@@ -19,6 +19,7 @@ Navigate To Basket
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
+    Wait For Elements State    a >>     "icon-basket"
     Click          a >>    "icon-basket"
     Close Browser    CURRENT
 
