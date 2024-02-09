@@ -12,7 +12,6 @@ Plain Robot Framework installation
 
 ``` 
 pip install robotframework
-
 ``` 
 
 Install Browser library from PyPi with pip:
