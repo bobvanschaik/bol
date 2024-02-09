@@ -1,6 +1,6 @@
 # bol
 Test automation suite example built in Python Robot Framework - specifically Browser Library syntax.
-Tip: follow the installation instructions at the Library Browser github pages, since that will install the latest version of the RobotFramework as a dependency: https://github.com/MarketSquare/robotframework-browser/
+Tip: follow the installation instructions at the Library Browser github pages, since that will install the latest version as a dependency: https://github.com/MarketSquare/robotframework-browser/
 Keyword documentation: https://marketsquare.github.io/robotframework-browser/Browser.html
 
 
