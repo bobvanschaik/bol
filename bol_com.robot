@@ -42,7 +42,7 @@ Add Product To Basket
 Invalid Login
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
+    New Page       url=https://login.bol.com/wsp/login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
