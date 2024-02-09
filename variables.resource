@@ -1,3 +1,6 @@
+*** Settings ***
+Library   Browser
+
 *** Variables ***
 
 ${BROWSER}    Chromium      headless=False
