@@ -7,7 +7,7 @@ Resource   keywords.resource
 Starting a browser with a page
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page      {$BASE-URL}
+    New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
     Close Browser    CURRENT
