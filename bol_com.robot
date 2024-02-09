@@ -4,7 +4,7 @@ Resource   variables.resource
 Resource   keywords.resource
 
 *** Test Cases ***
-# asserts page Title
+[Documentation] asserts page Title
 Starting a browser with a page
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
