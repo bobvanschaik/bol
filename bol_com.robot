@@ -18,7 +18,7 @@ Navigate To Basket
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     text="Doorgaan"
-    Click        text="Doorgaan"
+    Click        css=.ui-btn
     Click          css=.basket
     Close Browser    CURRENT
 
