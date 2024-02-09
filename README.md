@@ -5,7 +5,7 @@ Test automation suite example built in Python Robot Framework. Keyword documenta
 
 Browser Library installation requires both Python and NodeJs.
 
-Read futher to install library with browser binaries.
+
 
 Install Browser library from PyPi with pip:
 
