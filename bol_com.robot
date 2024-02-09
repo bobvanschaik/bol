@@ -4,7 +4,7 @@ Resource   variables.resource
 Resource   keywords.resource
 
 *** Test Cases ***
-[Documentation] This test case tests that the browser is loading a page and asserts the page Title.
+# This test case tests that the browser is loading a page and asserts the page Title.
 Starting a browser with a page
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
@@ -14,7 +14,7 @@ Starting a browser with a page
     Close Browser    CURRENT
 
 Navigate To Basket
-[Documentation] This test case accepts all cookies, then language check and navigates to the basket.
+# This test case accepts all cookies, then language check and navigates to the basket.
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
@@ -27,7 +27,7 @@ Navigate To Basket
     Close Browser    CURRENT
 
 Add Product To Basket
-[Documentation] This test case searches and adds a product to the basket.
+# This test case searches and adds a product to the basket.
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
@@ -36,9 +36,11 @@ Add Product To Basket
     Click        css=.ui-btn
     Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
-    Click            id=px_search_button_click
-    Wait For Elements State    id=9200000053342577
-    Click   id=9200000053342577
+    Click     //button[@type='submit']
+    Wait For Elements State    //*[@id="9200000053342577"]
+    Click   //*[@id="9200000053342577"]
+    Click    id="px_addon_page_click"
+    
     Close Browser    CURRENT
 
 Invalid Login
