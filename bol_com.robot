@@ -4,6 +4,7 @@ Resource    keywords.robot
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
+Go To Bol
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
