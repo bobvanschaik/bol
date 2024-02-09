@@ -1,2 +1,3 @@
 *** Keywords ***
-Home    url=https://www.bol.com/          
+New Browser    Chromium    headless=False
+New Page    https://www.bol.com/
