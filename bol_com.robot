@@ -49,9 +49,9 @@ Invalid Login
     Get Element    text=Inloggen
 
     Pause execution
-    Fill Text      id=username    wrong_name
-    Fill Text      id=password    wrong_pass
-    Click            css=.login-button
+    Fill Text      id="react-aria-1"    wrong_name@mail.com
+    Fill Text      id="react-aria-5"    wrong_pass
+    Click          #__next > main > div > div > form > div.buttons > button
 
 Navigate To Baby Room Furniture
     New Browser    chromium    headless=false
