@@ -34,9 +34,10 @@ Add Product To Basket
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
     Click      css=.basket
-    Fill Text      id=searchfor    baby
+    Fill Text      id=searchfor    babyfoon
     Take Screenshot
-    # Click            css=.search-indicator
+    # Click   id=9300000064661806         
+# https://www.bol.com/nl/nl/p/philips-avent-connected-scd923-26-beeldbabyfoon-met-app/9300000064661806/?bltgh=iUPxjMjKDp6Zh7t9iWFI-w.2_18.20.ProductTitle
     # Click            css=.add-to-basket
     Close Browser    CURRENT
 
