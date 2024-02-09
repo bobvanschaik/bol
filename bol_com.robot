@@ -9,12 +9,11 @@ Starting a browser with a page
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
-# accepts all cookies 
     Click          id=js-first-screen-accept-all-button    left
-# asserts page Title
     Get Title        contains  De winkel van ons allemaal
     Close Browser    CURRENT
 
+# accepts all cookies then language and asserts page Title
 Navigate To Basket
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
@@ -23,7 +22,6 @@ Navigate To Basket
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
     Get Title        contains  De winkel van ons allemaal
-# accepts all cookies then language
     Wait For Elements State        id=basket
     Click              id=basket
     Close Browser    CURRENT
