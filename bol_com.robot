@@ -5,9 +5,9 @@ Resource   keywords.resource
 
 *** Test Cases ***
 Starting a browser with a page
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
+    New Browser
+    New Context
+    New Page
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
     Close Browser    CURRENT
