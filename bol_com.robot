@@ -88,11 +88,11 @@ Check Footer Links Href Attribute
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
 
- #   ${links}=    Get Web Elements    css=.footer-links a
- #   FOR    ${link}    IN    @{links}
- #       ${href}=    Get Element Attribute    ${link}    href
- #       Should Not Be Empty    ${href}
- #   END
+ # ${links}=    Get Web Elements    css=.footer-links a
+ # FOR    ${link}    IN    @{links}
+ # ${href}=    Get Element Attribute    ${link}    href
+ # Should Not Be Empty    ${href}
+ # END
 
     # Take Screenshot
     # Get Page Source
