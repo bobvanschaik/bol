@@ -49,7 +49,10 @@ Invalid Login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
+    Get Element    text=Inloggen
+    Click    text=Inloggen
 
+    Pause execution
     Fill Text      id=username    wrong_name
     Fill Text      id=password    wrong_pass
     Click            css=.login-button
