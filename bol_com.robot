@@ -40,7 +40,6 @@ Add Product To Basket
     Wait For Elements State    //*[@id="9200000053342577"]
     Click   //*[@id="9200000053342577"]
     Click    id="px_addon_page_click"
-    
     Close Browser    CURRENT
 
 Invalid Login
