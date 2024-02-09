@@ -1,6 +1,7 @@
 *** Settings ***
 Library    Browser
 Resource    keywords.robot
+Test Setup          New Page    https://www.bol.com/
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
