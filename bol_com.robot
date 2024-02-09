@@ -39,9 +39,6 @@ Add Product To Basket
     Press Keys     xpath=//button[@class=“wsp-search__btn” and contains(text(),‘Zoeken’)]     Enter
     Wait For Elements State    id=9200000053342577
     Click   id=9200000053342577
-    Take Screenshot
-    Get Page Source
-    Pause execution
     Close Browser    CURRENT
 
 Invalid Login
