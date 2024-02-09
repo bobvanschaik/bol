@@ -1,7 +1,7 @@
 *** Variables ***
 
 ${BROWSER}    chrome
-${URL}        https://www.bol.com
+${BASE-URL}   https://www.bol.com/
 
 # Test data
 ${FIRST_NAME}    Jan
