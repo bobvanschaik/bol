@@ -2,18 +2,12 @@
 Library    Browser
 Resource    keywords.robot
 
-*** Variables ***
-${browser}        Chromium
-${url}            https://www.bol.com/
-${email}    jan.maas@example.com
-${username}    JanIsDeMan
-${password}    password123
-
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
-Starting a browser with a page
-    Open Maximized Browser
-    Open Browser to bol
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}
+    New Page       url=https://www.bol.com
+    Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
 Navigate To Basket
