@@ -27,7 +27,7 @@ Navigate To Basket
     Close Browser    CURRENT
 
 Add Product To Basket
-# This test case searches and adds a product to the basket.
+# This test case searches and adds a product to the basket. Last step is screenshotted to directory\results\browser\screenshot
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
