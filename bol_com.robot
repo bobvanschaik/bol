@@ -36,7 +36,7 @@ Add Product To Basket
     Click      css=.basket
     Fill Text      id=searchfor    babyfoon
     Take Screenshot
-    # Click   id=9300000064661806         
+    Click   id=9300000064661806         
 # https://www.bol.com/nl/nl/p/philips-avent-connected-scd923-26-beeldbabyfoon-met-app/9300000064661806/?bltgh=iUPxjMjKDp6Zh7t9iWFI-w.2_18.20.ProductTitle
     # Click            css=.add-to-basket
     Close Browser    CURRENT
