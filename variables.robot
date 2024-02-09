@@ -2,9 +2,11 @@
 Library   Browser
 
 *** Variables ***
-
-${BROWSER}    Chromium      headless=False
-${URL}   https://www.bol.com/
+${browser}        Chromium
+${url}            https://www.bol.com
+${email}    jan.maas@example.com
+${username}    JanIsDeMan
+${password}    password123
 
 # Test data
 ${FIRST_NAME}    Jan
