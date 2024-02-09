@@ -39,7 +39,8 @@ Add Product To Basket
     Click     //button[@type='submit']
     Wait For Elements State    //*[@id="9200000053342577"]
     Click   //*[@id="9200000053342577"]
-    Click    id="px_addon_page_click"
+    # Click    id="px_addon_page_click"
+    Take Screenshot
     Close Browser    CURRENT
 
 Invalid Login
