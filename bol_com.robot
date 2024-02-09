@@ -7,6 +7,7 @@ Resource    variables.robot
 # This test case tests that the browser is loading a page and asserts the page Title.
 Starting a browser with a page
     Open Maximized Browser
+    Open Browser to bol
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
