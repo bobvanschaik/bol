@@ -1,12 +1,13 @@
 *** Settings ***
 Library    Browser
-Resource   variables.resource
-# Resource   keywords.resource
+
+*** Variables ***
+${browser}        Chromium
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
 Starting a browser with a page
-    New Browser      Chromium      headless=False
+    New Browser    browser=${browser}      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
