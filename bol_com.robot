@@ -19,7 +19,7 @@ Navigate To Basket
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-    Click          css=.basket
+    Click          id=basket
     Close Browser    CURRENT
 
 Add Product To Basket
