@@ -4,8 +4,8 @@ Resource   variables.resource
 Resource   keywords.resource
 
 *** Test Cases ***
-# This test case tests that the browser is loading a page and asserts the page Title.
 Starting a browser with a page
+# This test case tests that the browser is loading a page and asserts the page Title.
     New Browser      Chromium      headless=False
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
