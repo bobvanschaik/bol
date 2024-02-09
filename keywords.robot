@@ -10,3 +10,4 @@ Open Maximized Browser
 Open Browser to bol
     [Arguments]    ${url}
     New Page       ${url}
+    Click          id=js-first-screen-accept-all-button    left
