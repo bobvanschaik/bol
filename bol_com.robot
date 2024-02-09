@@ -35,7 +35,7 @@ Add Product To Basket
     Click        css=.ui-btn
     Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
-    Click    id=button_location    left
+    Click    id=searchfor    left
     Wait For Elements State    id=9300000064661806
     Click   id=9300000064661806
     Take Screenshot
