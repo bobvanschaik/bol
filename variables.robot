@@ -3,7 +3,7 @@ Library   Browser
 
 *** Variables ***
 ${browser}        Chromium
-${url}            https://www.bol.com
+${url}            https://www.bol.com/
 ${email}    jan.maas@example.com
 ${username}    JanIsDeMan
 ${password}    password123
