@@ -1,7 +1,7 @@
 *** Settings ***
 Library    Browser
-Resource    keywords.robot
 Resource    variables.robot
+Resource    keywords.robot
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
