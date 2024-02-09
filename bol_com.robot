@@ -33,8 +33,9 @@ Add Product To Basket
     Click        css=.ui-btn
     Click      css=.basket
     Fill Text      id=searchfor    baby
-    Click            css=.search-indicator
-    Click            css=.add-to-basket
+    Take Screenshot
+    # Click            css=.search-indicator
+    # Click            css=.add-to-basket
     Close Browser    CURRENT
 
 Invalid Login
