@@ -22,6 +22,7 @@ Navigate To Basket
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
+    Get Title        contains  De winkel van ons allemaal
 # accepts all cookies then language
     Wait For Elements State        id=basket
     Click              id=basket
