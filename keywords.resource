@@ -7,6 +7,6 @@ Open Maximized Browser
     New Browser    browser=${browser}    headless=false   args=["--start-maximized"]
     New Context    viewport=${None}
 
-Go to Site
+Open Browser to bol
     [Arguments]    ${url}
     New Page       ${url}
