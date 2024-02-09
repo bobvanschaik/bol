@@ -1,7 +1,13 @@
 *** Settings ***
 Library    Browser
-Resource    variables.robot
 Resource    keywords.robot
+
+*** Variables ***
+${browser}        Chromium
+${url}            https://www.bol.com/
+${email}    jan.maas@example.com
+${username}    JanIsDeMan
+${password}    password123
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
