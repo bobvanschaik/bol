@@ -80,12 +80,8 @@ Check Footer Links Href Attribute
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-
- # ${links}=    Get Web Elements    css=.footer-links a
- # FOR    ${link}    IN    @{links}
- # ${href}=    Get Element Attribute    ${link}    href
- # Should Not Be Empty    ${href}
- # END
+    ${ref}=    Get Element    <footer>
+    Get Property    ${ref}    innerText    ==    Footer
 
     # Take Screenshot
     # Get Page Source
