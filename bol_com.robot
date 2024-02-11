@@ -18,7 +18,10 @@ ${password}    password123
 ${email}    jan.man@example.com
 
 *** Keywords ***
-${context} =    New Context    viewport={'width': 1920, 'height': 1080}
+# Enter User Data
+# [Arguments]    ${firstname}=Max    ${password}=Mustermann
+#  Fill Text    id=firstname    Jan
+#  Fill Text    id=password    Man
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
