@@ -2,14 +2,19 @@
 Library    Browser
 Resource    keywords.robot
 
+*** Variables ***
+${browser}    chromium
+${headless}   False
+${context}    viewport={'width': 1920, 'height': 1080}
+
 *** Keywords ***
-${defaultcontext} =    New Context    viewport={'width': 1920, 'height': 1080}    recordHar=${har}
+${context} =    New Context    viewport={'width': 1920, 'height': 1080}    recordHar=${har}
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
 Go To Bol
     New Browser    chromium    headless=false
-    New Context    ${defaultcontext}
+    New Context    ${context}
     New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
