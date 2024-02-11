@@ -44,7 +44,8 @@ Invalid Login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-    Click        innerText    ==    Inloggen
+    Wait For Elements State     css=.account-button
+    Click        css=.account-button
 
 
    # Pause execution
