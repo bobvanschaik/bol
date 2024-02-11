@@ -4,6 +4,7 @@ Library   Browser
 *** Variables ***
 ${browser}        Chromium
 ${url}            https://www.bol.com/
+${acceptallcookies}    id=js-first-screen-accept-all-button
 ${email}    jan.maas@example.com
 ${username}    JanIsDeMan
 ${password}    password123
@@ -16,7 +17,6 @@ ${EMAIL}    jan.maas@example.com
 ${PASSWORD}    password123
 ${SPECIAL_COMMENT}    1-9 :; ⟨ ⟩, / / â, ê, î, ô, û, ŵ, ŷ, ä, ë, ï, ö, ü, ẅ, ÿ, á, é, í, ó, ú, ẃ, ý, à, è, ì, ò, ù, ẁ, ỳ
 
-# Locators
 ${SEARCH_BAR}     id=searchfor
 ${SEARCH_INDICATOR}  css=.search-indicator
 ${BASKET}       css=.basket
