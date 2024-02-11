@@ -27,22 +27,24 @@ Open Bol Homepage
 Assert Title Homepage
     Get Title        contains  De winkel van ons allemaal
 
+Click On Basket
+    Wait For Elements State        id=basket
+    Click              id=basket
+
 # Enter User Data
 # [Arguments]    ${firstname}=Jan    ${password}=Man
 #  Fill Text    id=firstname    Jan
 #  Fill Text    id=password    Man
 
 *** Test Cases ***
-# This test case tests that the browser is loading a page and asserts the page Title.
-Go To Bol
+Navigate To Bol
     Open Bol Homepage
     Assert Title Homepage
 
 Navigate To Basket
 # This test case accepts all cookies, then language choice and navigates to the basket.
     Open Bol Homepage
-    Wait For Elements State        id=basket
-    Click              id=basket
+    Click On Basket
 
 Add Product To Basket
 # This test case searches and adds a product to the basket. Last step is screenshotted to ..\results\browser\screenshot
