@@ -2,6 +2,9 @@
 Library    Browser
 Resource    keywords.robot
 
+*** Keywords ***
+${defaultcontext} =    New Context    viewport={'width': 1920, 'height': 1080}    recordHar=${har}
+
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
 Go To Bol
