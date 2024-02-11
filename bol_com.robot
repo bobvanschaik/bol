@@ -19,7 +19,7 @@ ${email}    jan.man@example.com
 
 *** Keywords ***
 # Enter User Data
-# [Arguments]    ${firstname}=Max    ${password}=Mustermann
+# [Arguments]    ${firstname}=Jan    ${password}=Man
 #  Fill Text    id=firstname    Jan
 #  Fill Text    id=password    Man
 
