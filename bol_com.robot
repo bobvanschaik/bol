@@ -41,10 +41,12 @@ Add Product To Basket
 Invalid Login
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://login.bol.com/wsp/login
+    New Page       url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=span.u-show-block@screen-xl-up
-    Click        css=span.u-show-block@screen-xl-up
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
+    Get Element By Role    button    contains    id="px_common_click"
+    Click        id="px_common_click"
 
 
    # Pause execution
