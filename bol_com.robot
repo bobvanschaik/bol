@@ -16,6 +16,14 @@ ${email}    jan.maas@example.com
 ${username}    Jan Man
 ${password}    password123
 ${email}    jan.man@example.com
+# ${search_bar}     id=searchfor
+# ${basket}       id=basket
+# ${add_to_basket}     //button[@type='submit']
+# ${email_field}
+# ${password_field}
+# ${filter_link}
+# ${footer_links}
+# ${test-comment}    z19 :; ⟨ ⟩, / / â, ê, î, ô, û, ŵ, ŷ, ä, ë, ï, ö, ü, ẅ, ÿ, á, é, í, ó, ú, ẃ, ý, à, è, ì, ò, ù, ẁ, ỳ
 
 *** Keywords ***
 Open Bol Homepage
