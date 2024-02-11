@@ -13,7 +13,7 @@ Go To Bol
     Get Title        contains  De winkel van ons allemaal
 
 Navigate To Basket
-# This test case accepts all cookies, then language check and navigates to the basket.
+# This test case accepts all cookies, then language choice and navigates to the basket.
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://www.bol.com
