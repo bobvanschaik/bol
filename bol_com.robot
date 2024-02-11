@@ -20,6 +20,7 @@ ${email}    jan.man@example.com
 *** Keywords ***
 Open Bol Homepage
     New Page    url=https://www.bol.com
+    Click          id=js-first-screen-accept-all-button    left
 
 # Enter User Data
 # [Arguments]    ${firstname}=Jan    ${password}=Man
@@ -30,7 +31,6 @@ Open Bol Homepage
 # This test case tests that the browser is loading a page and asserts the page Title.
 Go To Bol
     Open Bol Homepage
-    Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
 Navigate To Basket
