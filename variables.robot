@@ -22,4 +22,4 @@ ${FILTER_LINK}       css=.filter-link
 ${FOOTER_LINKS}      css=.footer-links a
 
 # Test data
-${diakrieten-comment}    1-9 :; ⟨ ⟩, / / â, ê, î, ô, û, ŵ, ŷ, ä, ë, ï, ö, ü, ẅ, ÿ, á, é, í, ó, ú, ẃ, ý, à, è, ì, ò, ù, ẁ, ỳ
+${diakrieten-comment}    19 :; ⟨ ⟩, / / â, ê, î, ô, û, ŵ, ŷ, ä, ë, ï, ö, ü, ẅ, ÿ, á, é, í, ó, ú, ẃ, ý, à, è, ì, ò, ù, ẁ, ỳ
