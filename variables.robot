@@ -5,7 +5,7 @@ Library   Browser
 ${browser}        Chromium
 ${url}            https://www.bol.com/
 ${acceptallcookies}    id=js-first-screen-accept-all-button
-${login_btn}
+# ${login_btn}
 ${email}    jan.maas@example.com
 ${username}    Jan Man
 ${password}    password123
