@@ -44,8 +44,8 @@ Invalid Login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-    Get Element By Role    button    contains    id="px_common_click"
-    Click        id="px_common_click"
+    Wait For Elements State
+    Click        innerText    ==    Inloggen
 
 
    # Pause execution
@@ -82,6 +82,11 @@ Check Footer Links Href Attribute
     Click        css=.ui-btn
     ${ref}=    Get Element    <footer>
     Get Property    ${ref}    innerText    ==    Footer
+New Page   ${LOGIN_URL}
+${ref}=    Get Element    h1
+Get Property    ${ref}    innerText    ==    Login Page
+Evaluate JavaScript    ${ref}    (elem) => elem.innerText = "abc"
+Get Property    ${ref}    innerText    ==    abc
 
     # Take Screenshot
     # Get Page Source
