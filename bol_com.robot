@@ -21,6 +21,8 @@ ${email}    jan.man@example.com
 Open Bol Homepage
     New Page    url=https://www.bol.com
     Click          id=js-first-screen-accept-all-button    left
+    Wait For Elements State     css=.ui-btn
+    Click        css=.ui-btn
 
 # Enter User Data
 # [Arguments]    ${firstname}=Jan    ${password}=Man
@@ -35,23 +37,13 @@ Go To Bol
 
 Navigate To Basket
 # This test case accepts all cookies, then language choice and navigates to the basket.
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Open Bol Homepage
     Wait For Elements State        id=basket
     Click              id=basket
 
 Add Product To Basket
 # This test case searches and adds a product to the basket. Last step is screenshotted to ..\results\browser\screenshot
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Open Bol Homepage
     Wait For Elements State    id=searchfor
     Fill Text      id=searchfor    babyfoon
     Click     //button[@type='submit']
@@ -60,12 +52,7 @@ Add Product To Basket
   #  Take Screenshot
 
 Invalid Login
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Open Bol Homepage
   #  Wait For Elements State     css=.account-button
   #  Click        css=.account-button
   #  Fill Text      id="react-aria-1"    wrong_name@mail.com
@@ -73,32 +60,17 @@ Invalid Login
   #  Click          css=button.c-cTzGPd
 
 Navigate To Baby Room Furniture
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
-
+    Open Bol Homepage
    # Click      css=.dropdown-menu-item   # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
 
 Filter Dutch-Language E-books
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Open Bol Homepage
 
    # Click          id=js-first-screen-accept-all-button    left
    # Click          css=.filter-link    Dutch-Language
 
 Check Footer Links Href Attribute
-    New Browser    chromium    headless=false
-    New Context    viewport={'width': 1920, 'height': 1080}
-    New Page       url=https://www.bol.com
-    Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Open Bol Homepage
     ${ref}=    Get Element    <footer>
     Get Property    ${ref}    innerText    ==    Footer
 New Page   ${LOGIN_URL}
