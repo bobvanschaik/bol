@@ -44,14 +44,11 @@ Invalid Login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
-    Wait For Elements State     css=.account-button
-    Click        css=.account-button
-
-
-   # Pause execution
+  #  Wait For Elements State     css=.account-button
+  #  Click        css=.account-button
   #  Fill Text      id="react-aria-1"    wrong_name@mail.com
   #  Fill Text      id="react-aria-5"    wrong_pass
-  #  Click          #__next > main > div > div > form > div.buttons > button
+  #  Click          css=button.c-cTzGPd
 
 Navigate To Baby Room Furniture
     New Browser    chromium    headless=false
