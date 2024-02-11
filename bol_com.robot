@@ -44,7 +44,7 @@ Invalid Login
     New Page       url=https://login.bol.com/wsp/login
     Click          id=js-first-screen-accept-all-button    left
     Wait For Elements State     css=.ui-btn
-    Click        css=.ui-btn
+    Click        css=span.u-show-block@screen-xl-up
     Get Element    text=Inloggen
 
     Pause execution
