@@ -53,8 +53,8 @@ Add Product To Basket
 
 Invalid Login
     Open Bol Homepage
-  #  Wait For Elements State     css=.account-button
-  #  Click        css=.account-button
+    Wait For Elements State     css=.offcanvas-header__close-btn
+    Click        css=.offcanvas-header__close-btn
   #  Fill Text      id="react-aria-1"    wrong_name@mail.com
   #  Fill Text      id="react-aria-5"    wrong_pass
   #  Click          css=button.c-cTzGPd
