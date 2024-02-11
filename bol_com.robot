@@ -60,7 +60,9 @@ Invalid Login
 
 Navigate To Baby Room Furniture
     Open Bol Homepage
-   # Click      css=.dropdown-menu-item   # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
+    Hover      text=Categorieën 
+# Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
+    
 
 Filter Dutch-Language E-books
     Open Bol Homepage
