@@ -1,7 +1,7 @@
 *** Settings ***
 Library    Browser
 Suite Setup    New Browser    browser=${browser}    headless=${headless}
-Test Setup    New Context
+Test Setup    New Context    context=${context}
 Test Teardown    Close Context
 Suite Teardown    Close Browser
 
