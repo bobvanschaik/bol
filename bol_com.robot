@@ -59,10 +59,11 @@ Invalid Login
   #  Click          css=button.c-cTzGPd
 
 Navigate To Baby Room Furniture
+# via hover navigate to https://www.bol.com/nl/nl/l/babykamermeubels/44542/
+# Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture    
     Open Bol Homepage
-    Hover      text=Categorieën 
-# Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture
-    
+    Hover      text=Categorieën
+    Hover      
 
 Filter Dutch-Language E-books
     Open Bol Homepage
