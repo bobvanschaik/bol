@@ -32,9 +32,9 @@ Click On Basket
     Click              id=basket
 
 # Enter User Data
-# [Arguments]    ${firstname}=Jan    ${password}=Man
-#  Fill Text    id=firstname    Jan
-#  Fill Text    id=password    Man
+# [Arguments]    ${email}=Jan    ${password}=Man
+#  Fill Text    id="react-aria-1"    jan.man@example.com
+#  Fill Text    id="react-aria-5"   password123
 
 *** Test Cases ***
 Navigate To Bol
