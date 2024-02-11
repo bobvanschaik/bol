@@ -43,14 +43,14 @@ Invalid Login
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page       url=https://login.bol.com/wsp/login
     Click          id=js-first-screen-accept-all-button    left
-    Wait For Elements State     css=.ui-btn
+    Wait For Elements State     css=span.u-show-block@screen-xl-up
     Click        css=span.u-show-block@screen-xl-up
-    Get Element    text=Inloggen
 
-    Pause execution
-    Fill Text      id="react-aria-1"    wrong_name@mail.com
-    Fill Text      id="react-aria-5"    wrong_pass
-    Click          #__next > main > div > div > form > div.buttons > button
+
+   # Pause execution
+  #  Fill Text      id="react-aria-1"    wrong_name@mail.com
+  #  Fill Text      id="react-aria-5"    wrong_pass
+  #  Click          #__next > main > div > div > form > div.buttons > button
 
 Navigate To Baby Room Furniture
     New Browser    chromium    headless=false
