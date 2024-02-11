@@ -11,7 +11,7 @@ ${headless}   False
 ${context}    viewport={'width': 1920, 'height': 1080}
 
 *** Keywords ***
-${context} =    New Context    viewport={'width': 1920, 'height': 1080}    recordHar=${har}
+${context} =    New Context    viewport={'width': 1920, 'height': 1080}
 
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
