@@ -9,6 +9,13 @@ Suite Teardown    Close Browser
 ${browser}    chromium
 ${headless}   False
 ${context}    viewport={'width': 1920, 'height': 1080}
+${cookies_btn}    id=js-first-screen-accept-all-button
+${language_btn}    css=.ui-btn
+# ${login_btn}
+${email}    jan.maas@example.com
+${username}    Jan Man
+${password}    password123
+${email}    jan.man@example.com
 
 *** Keywords ***
 ${context} =    New Context    viewport={'width': 1920, 'height': 1080}
