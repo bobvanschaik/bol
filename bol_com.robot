@@ -24,6 +24,9 @@ Open Bol Homepage
     Wait For Elements State     css=.ui-btn
     Click        css=.ui-btn
 
+Assert Title Homepage
+    Get Title        contains  De winkel van ons allemaal
+
 # Enter User Data
 # [Arguments]    ${firstname}=Jan    ${password}=Man
 #  Fill Text    id=firstname    Jan
@@ -33,7 +36,7 @@ Open Bol Homepage
 # This test case tests that the browser is loading a page and asserts the page Title.
 Go To Bol
     Open Bol Homepage
-    Get Title        contains  De winkel van ons allemaal
+    Assert Title Homepage
 
 Navigate To Basket
 # This test case accepts all cookies, then language choice and navigates to the basket.
