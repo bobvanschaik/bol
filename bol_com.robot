@@ -18,6 +18,9 @@ ${password}    password123
 ${email}    jan.man@example.com
 
 *** Keywords ***
+Open Bol Homepage
+    New Page    url=https://www.bol.com
+
 # Enter User Data
 # [Arguments]    ${firstname}=Jan    ${password}=Man
 #  Fill Text    id=firstname    Jan
@@ -26,7 +29,7 @@ ${email}    jan.man@example.com
 *** Test Cases ***
 # This test case tests that the browser is loading a page and asserts the page Title.
 Go To Bol
-    New Page       url=https://www.bol.com
+    Open Bol Homepage
     Click          id=js-first-screen-accept-all-button    left
     Get Title        contains  De winkel van ons allemaal
 
