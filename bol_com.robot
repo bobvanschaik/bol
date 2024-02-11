@@ -86,3 +86,5 @@ Check Footer Links Href Attribute
     # Take Screenshot
     # Get Page Source
     # Pause execution
+    # Get Element States    id=yourelement    contains    visible
+
