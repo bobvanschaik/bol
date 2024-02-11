@@ -53,7 +53,7 @@ Add Product To Basket
 
 Invalid Login
     Open Bol Homepage
-    Click        span > u-show-block@screen-xl-up
+    Click        text="Inloggen"
   #  Fill Text      id="react-aria-1"    wrong_name@mail.com
   #  Fill Text      id="react-aria-5"    wrong_pass
   #  Click          css=button.c-cTzGPd
