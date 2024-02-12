@@ -68,7 +68,7 @@ Filter Dutch-Language E-books
 
 Check Footer Links Href Attribute
     Open Bol Homepage
-    ${ref}=    Get Element    <footer class="c-ivprSQ">
+    ${ref}=    Get Element    //*[@id="__next"]/div/footer"]
     Get Property    ${ref}    innerText    ==    Footer
     Evaluate JavaScript    ${ref}    (elem) => elem.innerText = "Footer"
 
