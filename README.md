@@ -1,5 +1,5 @@
 # bol
-Robot Framework Test Suite that runs automation tests on a Dutch webshop with Browser Library syntax.
+Robot Framework Test Suite that runs automated tests on a Dutch webshop with Browser Library syntax.
 Keyword documentation: https://marketsquare.github.io/robotframework-browser/Browser.html
 
 It consists of two .robot files, with all Variables stored in variables.robot. Repeating code are stored in Keywords.
