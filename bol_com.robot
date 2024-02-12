@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Browser
-Resource    variables.robot
+Resource    variables.resource
 Suite Setup    New Browser    browser=${browser}    headless=${headless}
 Test Setup    New Context
 Test Teardown    Close Context
