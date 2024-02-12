@@ -6,15 +6,6 @@ Test Setup    New Context
 Test Teardown    Close Context
 Suite Teardown    Close Browser
 
-*** Variables ***
-${browser}        chromium
-${headless}   False
-${context}    viewport={'width': 1920, 'height': 1080}
-${url}            https://www.bol.com/
-${acceptallcookies}    id=js-first-screen-accept-all-button
-${cookies_btn}    id=js-first-screen-accept-all-button
-${language_btn}    css=.ui-btn
-
 *** Keywords ***
 Open Bol Homepage
     New Page    url=https://www.bol.com
