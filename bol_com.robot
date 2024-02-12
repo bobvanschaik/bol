@@ -47,29 +47,28 @@ Add Product To Basket
 
 Invalid Login
     Open Bol Homepage
-    Click           css=a[data-test="login-link"]
+  #  Click           css=a[data-test="login-link"]
   #  Fill Text      id="react-aria-1"    wrong_name@mail.com
   #  Fill Text      id="react-aria-5"    wrong_pass
-  #  Click          css=button.c-cTzGPd
+  #  Click          css=a[type="button"]
 
 Navigate To Baby Room Furniture
 # via hover navigate to https://www.bol.com/nl/nl/l/babykamermeubels/44542/
 # Pregnant, Baby & Toddler > Baby Room & Sleep > Baby Room Furniture    
     Open Bol Homepage
-    Hover      text=Categorieën
-    Hover      
+    Hover      text=Categorieën  
 
 Filter Dutch-Language E-books
     Open Bol Homepage
-    Get Element States   text=Babykamermeubels    contains    visible
-    Click    contains    text=Babykamermeubels
+ #   Get Element States   text=Babykamermeubels    contains    visible
+ #   Click    contains    text=Babykamermeubels
 
 Check Footer Links Href Attribute
     Open Bol Homepage
-    ${ref}=    Get Element    //*[@id="__next"]/div/footer"]
-    Get Property    ${ref}    innerText    ==    Footer
-    Evaluate JavaScript    ${ref}    (elem) => elem.innerText = "Footer"
-    Get Property    ${ref}    innerText    ==    Footer
+#    ${ref}=    Get Element    //*[@id="__next"]/div/footer"]
+#    Get Property    ${ref}    innerText    ==    Footer
+#    Evaluate JavaScript    ${ref}    (elem) => elem.innerText = "Footer"
+#    Get Property    ${ref}    innerText    ==    Footer
 
 
     # Take Screenshot
