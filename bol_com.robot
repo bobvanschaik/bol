@@ -71,6 +71,8 @@ Check Footer Links Href Attribute
     ${ref}=    Get Element    //*[@id="__next"]/div/footer"]
     Get Property    ${ref}    innerText    ==    Footer
     Evaluate JavaScript    ${ref}    (elem) => elem.innerText = "Footer"
+    Get Property    ${ref}    innerText    ==    Footer
+
 
     # Take Screenshot
     # Get Page Source
