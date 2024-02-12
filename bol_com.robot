@@ -7,7 +7,7 @@ Test Teardown    Close Context
 Suite Teardown    Close Browser
 
 *** Variables ***
-${browser}        Chromium
+${browser}        chromium
 ${headless}   False
 ${context}    viewport={'width': 1920, 'height': 1080}
 ${url}            https://www.bol.com/
