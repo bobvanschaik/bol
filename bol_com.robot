@@ -60,11 +60,9 @@ Navigate To Baby Room Furniture
     Hover      
 
 Filter Dutch-Language E-books
-# https://www.bol.com/nl/nl/l/ebooks/
     Open Bol Homepage
-
-
-
+    Get Element States   text=Babykamermeubels    contains    visible
+    Click    contains    text=Babykamermeubels
 
 Check Footer Links Href Attribute
     Open Bol Homepage
