@@ -1,6 +1,7 @@
 # bol
 Robot Framework Test Suite that runs automated tests on a Dutch webshop with Browser Library syntax.
 Keyword documentation: https://marketsquare.github.io/robotframework-browser/Browser.html
+Robotcode extension for VScode: https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode
 
 It consists of two .robot files, with all Variables stored in variables.robot. Repeating code are stored in Keywords.
 
