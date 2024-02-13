@@ -35,14 +35,6 @@ Initialize the Browser library:
 rfbrowser init
 ```
 
-Install library when browsers binaries are installed separately to non standard location.
-
-Install Browser library from PyPi with pip:
-
-``` 
-pip install robotframework-browser
-```
-
 Initialize the Browser library and skip browsers installation:
 
 ```
